@@ -56,6 +56,7 @@ class todosController extends Controller
     }
 
     public function edit(Todo $todo) {
+        //$todo =Todo::find($todo); == (Todo $todo)
 
         return view('todos.edit')->with('todo', $todo);
 
